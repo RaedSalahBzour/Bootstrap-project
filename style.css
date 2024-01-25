@@ -1,3 +1,44 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
+}
+.brand {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(52, 134, 155);
+}
+.b-rad-r {
+  border-radius: 0 2rem 2rem 0;
+}
+.border-no {
+  border: 0;
+}
+button {
+  background: white;
+}
+button:hover {
+  background-color: rgb(52, 134, 155);
+  color: white;
+}
+label {
+  font-weight: 500;
+}
+.bg-eee {
+  background: #eee;
+}
+.font-bold {
+  font-weight: bold;
+}
+.f-r {
+  float: right;
+}
+img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+}
+.b-rad {
+  border-radius: 40%;
 }
