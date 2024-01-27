@@ -13,6 +13,8 @@ let marks = document.querySelector(".marks");
 let eachDegree = document.querySelector(".deg");
 let table = document.querySelector(".table");
 let login = document.querySelector(".login");
+let register = document.querySelector(".register");
+
 let mainContainer = document.querySelector(".main-container");
 studentbtn.addEventListener("click", () => {
   rightSide.classList.add("d-none");
@@ -152,10 +154,10 @@ login.addEventListener("click", () => {
   mainContainer.innerHTML = `<div class="" style="width: 40rem;height:25rem;display:flex;background-color:white!important;">
   <img src="log.jpeg" class="img-login " alt="...">
   <div class="d-flex flex-column align-items-center w-100">
-    <div class="container"> 
+    <div class="container-fluid"> 
     <p class="text-center py-2 fs-4">logo</p>
     <p class="text-center fs-3 font-bold ">Sign In</p>
-    <p class="text-center mx-4 font-small f-w-low w-75 ">Enter your email address and password to access admin panel</p>
+    <p class="text-center mx-5 font-small f-w-low w-75 ">Enter your email address and password to access admin panel</p>
     </div>
     <div><div >
     <label for="Input" class='fs-small'>Username</label>
@@ -165,9 +167,37 @@ login.addEventListener("click", () => {
   <label for="Password" class='fs-small'>Password</label>
     <input type="password" class="form-control" id="Password" placeholder="Password">
   </div>
-  <input type="submit" class="form-control bg-submit my-2" >
+  <input type="submit" class="form-control bg-submit my-2"value="Sign In" >
   </div>
     <div class="py-2">don't have an account? <a href="" class="text-decoration-none text-danger">Sign Up</a></div>
   </div>
 </div>`;
+});
+register.addEventListener("click", () => {
+  mainContainer.parentNode.setAttribute(
+    "style",
+    "background-color:#e9e9e9!important; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"
+  );
+  mainContainer.innerHTML = `<div class="" style="width: 40rem;height:25rem;display:flex;background-color:white!important;">
+      <img src="log.jpeg" class="img-login " alt="...">
+      <div class="d-flex flex-column align-items-center w-100">
+        <div class="container-fluid"> 
+        <p class="text-center py-2 fs-4">logo</p>
+        <p class="text-center fs-3 font-bold text-secondary">Sign Up For Free</p>
+        </div>
+        <div>
+        <div>
+        <input type="text" class="form-control my-2" id="Input" placeholder="your name">
+      </div>
+      <div>
+      <input type="text" class="form-control my-2" id="Input" placeholder="email address">
+    </div>
+      <div >
+        <input type="password" class="form-control my-2" id="Password" placeholder="Password">
+      </div>
+      <input type="submit" class="form-control bg-submit my-2 " value="Sign Up">
+      </div>
+        <div class="py-5">Already have an account? <a href="" class="text-decoration-none text-danger">Sign In</a></div>
+      </div>
+    </div>`;
 });
